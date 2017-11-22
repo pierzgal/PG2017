@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Michał Pierzgalski" />
+  <title>Polityka gospodarcza</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="PG_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="PG_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="PG_files/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Polityka gospodarcza</h1>
+  <h1 class="subtitle">2017</h1>
+    <h2 class="author">Michał Pierzgalski</h2>
+</section>
+
+<section><section id="wykad-1-narzedzia-analizy-ekonomicznej" class="titleslide slide level1"><h1>Wykład 1: Narzędzia analizy ekonomicznej</h1></section><section id="modele-1" class="slide level2">
+<h2>Modele (1)</h2>
+<p>Analizując gospodarkę ekonomiści posługują się modelami. Modele opisują w uproszczony sposób pewne prawidłowości ekonomiczne.</p>
+</section><section id="modele-2" class="slide level2">
+<h2>Modele (2)</h2>
+<p>Zastosowanie modeli w badaniach wymaga ustalenia podstawowych założeń (zasad) odnośnie do funkcjonowania danego modelu, w tym przyjęcia klauzuli <em>ceteris paribus</em>.</p>
+<p>Modele najczęściej mają postać <strong>rysunkową</strong> lub dane są w postaci <strong>równań matematycznych</strong>.</p>
+</section><section id="model-popytu-i-podazy-postac-graficzna" class="slide level2">
+<h2>Model popytu i podaży (postać graficzna)</h2>
+<p><img src="img/market-equilibrium.svg" alt="Drawing" style="width:56%;"></p>
+</section><section id="liniowy-model-popytu-i-podazy---postac-funkcyjna" class="slide level2">
+<h2>Liniowy model popytu i podaży - postać funkcyjna</h2>
+<ul>
+<li class="fragment"><span class="math inline">\(Q_{D}(p) = b - ap\)</span></li>
+<li class="fragment"><span class="math inline">\(Q_{S}(p) = b + ap\)</span></li>
+</ul>
+</section><section id="rownanie-pkb" class="slide level2">
+<h2>Równanie PKB</h2>
+<p>Produkt Krajowy Brutto (PKB) - jest to łączna <strong>wyrażona w pieniądzu wartość</strong> wszystkich <strong>dóbr finalnych</strong> i usług wytworzonych w danym kraju zazwyczaj w ciągu roku lub kwartału. Jest to suma wartości dodanej wytworzonej przez wszystkie podmioty gospodarcze danego kraju, niezależnie kto jest ich właścicielem.</p>
+</section><section id="rownanie-pkb-2" class="slide level2">
+<h2>Równanie PKB (2)</h2>
+<p><strong>PKB</strong> można wyliczać jako wydatki na dobra i usługi finalne różnych podmiotów gospodarczych jak: gospodarstwa domowe, przedsiębiorstwa, państwo i cudzoziemcy, w tym wypadku:</p>
+<p><span class="math inline">\(PKB = C + I + G + X\)</span></p>
+<p>gdzie: <em>PKB</em> to produkt krajowy brutto, <em>C</em> - konsumpcja, <em>I</em> - inwestycje, <em>G</em> - wydatki rządowe, <em>X</em> - eksport netto.</p>
+</section><section id="model-ruchu-okreznego-w-gospodarce" class="slide level2">
+<h2>Model ruchu okrężnego w gospodarce</h2>
+<p><img src="img/circular_flow.png" alt="Drawing" style="width:50%;"></p>
+</section><section id="dane" class="slide level2">
+<h2>Dane</h2>
+<ul>
+<li class="fragment">szeregi czasowe</li>
+<li class="fragment">dane przekrojowe</li>
+<li class="fragment">dane panelowe</li>
+</ul>
+</section><section id="wskazniki-np.-zmiany-cen-1" class="slide level2">
+<h2>Wskaźniki (np. zmiany cen) (1)</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>2004</th>
+<th>2007</th>
+<th>2010</th>
+<th>Waga</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cena aluminium</td>
+<td>1758</td>
+<td>2644</td>
+<td>2232</td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<td>Cena miedzi</td>
+<td>2766</td>
+<td>6710</td>
+<td>7234</td>
+<td>0.8</td>
+</tr>
+<tr class="odd">
+<td>Wskaźnik cen aluminium</td>
+<td>100</td>
+<td>150</td>
+<td>…</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Wskaźnik cen miedzi</td>
+<td>100</td>
+<td>242</td>
+<td>…</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>Wskaźnik cen obu metali</td>
+<td>100</td>
+<td>224</td>
+<td>…</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Waga odzwierciedla udział danego dobra w całkowitych wydatkach typowego gospodarstwa domowego lub przedsiębiorstwa. <strong>Suma wag jest równa 1</strong>.</p>
+</section><section id="wskazniki-np.-zmiany-cen-2" class="slide level2">
+<h2>Wskaźniki (np. zmiany cen) (2)</h2>
+<p>Ile wynosi wskaźnik cen aluminium w 2007 (rok bazowy to 2004)?</p>
+<ol type="1">
+<li class="fragment">Przyjmujemy np., że w roku bazowym wskaźnik cen jest równy 100.</li>
+<li class="fragment">Obliczamy o ile wzrosły ceny aluminium w okresie 2004-2007: <span class="math inline">\((2644 - 1758)/1758 = 0.5040 = 50.4\%\)</span></li>
+<li class="fragment">Odpowiednio zwiększamy wskaźnik cen aluminium: <span class="math inline">\(100 + 100 \times 0.5040 = 150.40\)</span></li>
+</ol>
+<p><strong>Podobne obliczenia wykonujemy dla innych dóbr</strong>.</p>
+</section><section id="wskazniki-np.-zmiany-cen-3" class="slide level2">
+<h2>Wskaźniki (np. zmiany cen) (3)</h2>
+<p>Ogólny wskaźnik cen (np. CPI lub PPI) to <strong>średnia ważona</strong> wartości wskaźników dla poszczególnych dóbr (np. cen aluminium i miedzi).</p>
+</section><section id="wskaznik-cpi" class="slide level2">
+<h2>Wskaźnik CPI</h2>
+<ul>
+<li class="fragment"><p>Wskaźnik cen towarów i usług konsumpcyjnych (Consumer Price Index) oblicza i publikuje Główny Urząd Statystyczny.</p></li>
+<li class="fragment"><p>Aby policzyć ten wskaźnik, co miesiąc zbierane są ceny ok. 1400 towarów (takich jak pieczywo, mięso, owoce, gazety, środki do prania, meble, sprzęt komputerowy) i usług (internetowych, transportowych, turystycznych) z ok. 35 tysięcy punktów handlowych i usługowych.</p></li>
+</ul>
+</section><section id="wskaznik-cpi-2" class="slide level2">
+<h2>Wskaźnik CPI (2)</h2>
+<ul>
+<li class="fragment"><p>Aby policzyć zmianę ogólnego poziomu cen – oprócz znajomości cen poszczególnych kategorii towarów i usług – konieczna jest także znajomość udziału tych kategorii w wydatkach konsumentów.</p></li>
+<li class="fragment"><p>Zmiana ceny produktu, który ma znaczny udział w wydatkach w większym stopniu wpływa na ogólny poziom cen, niż zmiana ceny produktu o niskim udziale. Wspomniane udziały służą jako wagi przy wyliczaniu przeciętnego poziomu cen.</p></li>
+</ul>
+</section><section id="wskaznik-ppi" class="slide level2">
+<h2>Wskaźnik PPI</h2>
+<ul>
+<li class="fragment"><p>(ang. Producer Price Index, PPI) – wskaźnik obrazujący zmiany poziomu cen ustalanych przez producentów na różnych etapach procesu wytwarzania dóbr. Powszechnie stosowany na świecie, jako jedna z miar poziomu inflacji.</p></li>
+<li class="fragment"><p>W Polsce indeks cen dóbr produkcyjnych przyjmuje postać wskaźnika cen produkcji sprzedanej przemysłu i jest obliczany oraz publikowany przez Główny Urząd Statystyczny.</p></li>
+</ul>
+</section><section id="pomiar-zmian-wielkosci-ekonomicznych" class="slide level2">
+<h2>Pomiar zmian wielkości ekonomicznych</h2>
+<ul>
+<li class="fragment">Zmiana procentowa, czyli zmiana absolutna podzielona przez wyjściowy/początkowy poziom danej wielkości.</li>
+<li class="fragment">Stopa wzrostu jest to zmiana procentowa zmiennej w danym okresie (zwykle rok) - zmiana procentowa w czasie (np. realna roczna stopa wzrostu <strong>PKB</strong>).</li>
+</ul>
+</section><section id="pomiar-inflacji" class="slide level2">
+<h2>Pomiar inflacji</h2>
+<p>Od marca 2009 r. Narodowy Bank Polski oblicza i publikuje cztery miary tzw. <strong>inflacji bazowej</strong>, np.:</p>
+<ul>
+<li class="fragment">inflacja po wyłączeniu cen najbardziej zmiennych,</li>
+<li class="fragment">inflacja po wyłączeniu cen żywności i energii.</li>
+</ul>
+</section><section id="wskaznik-inflacji" class="slide level2">
+<h2>Wskaźnik inflacji</h2>
+<p>W przypadku cen towarów konsumpcyjnych:</p>
+<p>Stopa inflacji = <span class="math inline">\((CPI_1 - CPI_0) / CPI_0 \times 100\%\)</span></p>
+</section><section id="procent-a-punkt-procentowy-p.p." class="slide level2">
+<h2>Procent a punkt procentowy (p.p.)</h2>
+<p>Spadek z 50% do 40% to spadek o 10 punktów procentowych lub o 20%.</p>
+<p><span class="math inline">\((40 - 50)/50 = -0.2 = 20\%\)</span></p>
+</section><section id="wielkosci-nominalne-i-realne-1" class="slide level2">
+<h2>Wielkości nominalne i realne (1)</h2>
+<p>Tabela: Średnia cena nowego domu w UK</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>1963</th>
+<th>1983</th>
+<th>2009</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cena domu (w tys. funtów)</td>
+<td>3.1</td>
+<td>35.6</td>
+<td>161</td>
+</tr>
+<tr class="even">
+<td>Wskaźnik cen (2009 = 100)</td>
+<td>6.3</td>
+<td>39.7</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>Realna cena domu w tys. funtów (w cenach z 2009)</td>
+<td>49.2</td>
+<td>90</td>
+<td>161</td>
+</tr>
+</tbody>
+</table>
+</section><section id="wielkosci-nominalne-i-realne-2" class="slide level2">
+<h2>Wielkości nominalne i realne (2)</h2>
+<p>Jak policzyć realną cenę domu w roku 1963 (2009 jest rokiem bazowy)?</p>
+<ol type="1">
+<li class="fragment">Obliczamy o ile większy jest ogólny poziom cen w 2009 : <span class="math inline">\((100 - 6.3)/6.3 = 14.8730 \times 100\% = 1487.30\%\)</span></li>
+<li class="fragment">Zwiększamy cenę domu z 1963 o <span class="math inline">\(1487.30\%\)</span> : <span class="math inline">\(3.1 + 3.1 \times 14.8730 = 49.2063\)</span></li>
+</ol>
+</section><section id="wielkosci-nominalne-i-realne-2-1" class="slide level2">
+<h2>Wielkości nominalne i realne (2)</h2>
+<p>Jak policzyć realną cenę domu w roku 2009 (1963 jest rokiem bazowy)?</p>
+<ol type="1">
+<li class="fragment">Obliczamy o ile mniejszy był ogólny poziom cen w 1963 : <span class="math inline">\((6.3 - 100)/100 = -0.937 \times 100\% = 93.7\%\)</span></li>
+<li class="fragment">Zmniejszamy cenę domu z 2009 o <span class="math inline">\(93.7\%\)</span> : <span class="math inline">\(161 - 0.937 \times 161 = 10.143\)</span></li>
+</ol>
+</section><section id="sia-nabywcza-pieniadza" class="slide level2">
+<h2>Siła nabywcza pieniądza</h2>
+<p>Jest to wskaźnik liczby dóbr, które można nabyć za jednostkę pieniężną (np. 1$)</p>
+</section><section id="iluzja-pieniadza" class="slide level2">
+<h2>Iluzja pieniądza</h2>
+<p>Ludzie zwykle rozumują w kategoriach nominalnej wartości pieniądza.</p>
+<p>Załóżmy, że za wynagrodzenie 1000 Euro kupujesz tylko chleb, który kosztuje 1 Euro/kg.</p>
+<p>Przypuśćmy, że masz do wybory dwa warianty:</p>
+<ul>
+<li class="fragment">wzrost wynagrodzenia do 1600 Euro, przy wzroście ceny chleba do 2 Euro/kg,</li>
+<li class="fragment">spadek wynagrodzenia do 800 Euro, przy utrzymaniu ceny chleba 1 Euro/kg.</li>
+</ul>
+</section><section id="wielkosci-cakowite-przecietne-i-krancowe" class="slide level2">
+<h2>Wielkości całkowite, przeciętne i krańcowe</h2>
+<p>Wielkości:</p>
+<ul>
+<li class="fragment">całkowite (<span class="math inline">\(C\)</span>),</li>
+<li class="fragment">przeciętne (<span class="math inline">\(\frac{C}{q}\)</span>)</li>
+<li class="fragment">wielkości krańcowe (<span class="math inline">\(\frac{\Delta C}{\Delta q}\)</span> dla <span class="math inline">\(\Delta q \rightarrow 0\)</span>).</li>
+</ul>
+</section><section id="koszty-cakowite-stae-i-zmienne" class="slide level2">
+<h2>Koszty całkowite (stałe i zmienne)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Produkcja</th>
+<th>Koszta całkowity stały</th>
+<th>Koszt całkowity zmienny</th>
+<th>Koszt całkowity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>100</td>
+<td>50</td>
+<td>150</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>100</td>
+<td>80</td>
+<td>180</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>100</td>
+<td>100</td>
+<td>200</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>100</td>
+<td>110</td>
+<td>210</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>100</td>
+<td>150</td>
+<td>250</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>100</td>
+<td>220</td>
+<td>320</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>100</td>
+<td>350</td>
+<td>450</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>100</td>
+<td>640</td>
+<td>740</td>
+</tr>
+</tbody>
+</table>
+</section><section id="koszty-przecietne-stae" class="slide level2">
+<h2>Koszty przeciętne (stałe)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Produkcja</th>
+<th>Koszt całkowity stały</th>
+<th>Koszt przeciętny stały</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>100</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>100</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>100</td>
+<td>33.3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>100</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>100</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>100</td>
+<td>16.6</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>100</td>
+<td>14.3</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>100</td>
+<td>12.5</td>
+</tr>
+</tbody>
+</table>
+</section><section id="koszty-przecietne-zmienne" class="slide level2">
+<h2>Koszty przeciętne (zmienne)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Produkcja</th>
+<th>Koszt całkowity zmienny</th>
+<th>Koszt przeciętny zmienny</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>50</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>80</td>
+<td>40</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>100</td>
+<td>33.3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>110</td>
+<td>27.5</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>150</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>220</td>
+<td>36.7</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>350</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>640</td>
+<td>80</td>
+</tr>
+</tbody>
+</table>
+</section><section id="koszt-przecietny" class="slide level2">
+<h2>Koszt przeciętny</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 26%" />
+<col style="width: 29%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Produkcja</th>
+<th>Koszt przeciętny stały</th>
+<th>Koszt przeciętny zmienny</th>
+<th>Koszt przeciętny całkowity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>100</td>
+<td>50</td>
+<td>150</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>50</td>
+<td>40</td>
+<td>90</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>33.3</td>
+<td>33.3</td>
+<td>67</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>25</td>
+<td>27.5</td>
+<td>52.5</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>20</td>
+<td>30</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>16.6</td>
+<td>36.7</td>
+<td>53.3</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>14.3</td>
+<td>50</td>
+<td>64.3</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>12.5</td>
+<td>80</td>
+<td>92.5</td>
+</tr>
+</tbody>
+</table>
+</section><section id="koszty-cakowite-i-krancowe" class="slide level2">
+<h2>Koszty całkowite i krańcowe</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Produkcja</th>
+<th>Koszt całkowity</th>
+<th>Koszt krańcowy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>150</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>180</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>200</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>210</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>250</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>320</td>
+<td>70</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>450</td>
+<td>130</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>740</td>
+<td>290</td>
+</tr>
+</tbody>
+</table>
+</section><section id="koszt-alternatywny-opportunity-cost" class="slide level2">
+<h2>Koszt alternatywny (<em>opportunity cost</em>)</h2>
+<p>Wyrażony jest w jednostkach alternatywnego dobra.</p>
+<p>Z ilu jednostek jednego dobra (<em>X</em>) trzeba zrezygnować, aby otrzymać dodatkową jednostkę innego dobra (<em>Y</em>)?</p>
+</section><section id="przewaga-absolutna" class="slide level2">
+<h2>Przewaga absolutna</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Producent</th>
+<th>Dobro</th>
+<th>Czas produkcji (w minutach)</th>
+<th>Produkcja na godzinę</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Daria</td>
+<td>Sok</td>
+<td>2</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Daria</td>
+<td>Sałatka</td>
+<td>2</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Jan</td>
+<td>Sok</td>
+<td>10</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>Jan</td>
+<td>Sałatka</td>
+<td>2</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+</section><section id="przewaga-absolutna-1" class="slide level2">
+<h2>Przewaga absolutna</h2>
+<p>Produkcja na godzinę, przy równym podziale czasu na produkcję obu towarów:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Producent</th>
+<th>Dobro</th>
+<th>Produkcja (1h)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Daria</td>
+<td>Sok</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>Daria</td>
+<td>Sałatka</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Jan</td>
+<td>Sok</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Jan</td>
+<td>Sałatka</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+</section><section id="przewaga-wzgledna-komparatywna-1" class="slide level2">
+<h2>Przewaga względna (komparatywna) (1)</h2>
+<p>Jest to zdolność podmiotu do produkcji dobra (świadczenia usługi) po niższym <strong>koszcie alternatywnym</strong>.</p>
+</section><section id="przewaga-wzgledna-komparatywna-2" class="slide level2">
+<h2>Przewaga względna (komparatywna) (2)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Producent</th>
+<th>Dobro</th>
+<th>Koszt alternatywny</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Daria</td>
+<td>Sok</td>
+<td>1 sałatka</td>
+</tr>
+<tr class="even">
+<td>Daria</td>
+<td>Sałatka</td>
+<td>1 sok</td>
+</tr>
+<tr class="odd">
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Jan</td>
+<td>Sok</td>
+<td>5 sałatek</td>
+</tr>
+<tr class="odd">
+<td>Jan</td>
+<td>Sałatka</td>
+<td>1/5 soku</td>
+</tr>
+</tbody>
+</table>
+</section><section id="przewaga-wzgledna-komparatywna-3" class="slide level2">
+<h2>Przewaga względna (komparatywna) (3)</h2>
+<p>Jan ma niższy koszt alternatywny produkcji <strong>sałatek</strong>, dlatego nawiązanie relacji handlowych między Janem i Darią będzie możliwe, gdy:</p>
+<ul>
+<li class="fragment">Jan wyspecjalizuje się w produkcji sałatek i będzie je sprzedawał Darii (np. 20 sałatek sprzedaje Darii i 10 sprzedaje samodzielnie),</li>
+<li class="fragment">Daria wyspecjalizuje się w produkcji soków i będzie je sprzedawała Janowi (np. 10 soków sprzedaje Janowi i 20 zatrzymuje).</li>
+</ul>
+</section><section id="przewaga-wzgledna-komparatywna-3-1" class="slide level2">
+<h2>Przewaga względna (komparatywna) (3)</h2>
+<p>Podział towarów po nawiązaniu wymiany handlowej.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Producent</th>
+<th>Dobro</th>
+<th>Liczba towarów (na godzinę)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Daria</td>
+<td>Sok</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>Daria</td>
+<td>Sałatka</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Jan</td>
+<td>Sok</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Jan</td>
+<td>Sałatka</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+</section><section id="przewaga-wzgledna-komparatywna-4" class="slide level2">
+<h2>Przewaga względna (komparatywna) (4)</h2>
+<p>Przed specjalizacją i nawiązaniem relacji handlowych, produkcja łączna na 1 godzinę Jana i Darii (zakładając, że 30 minut poświecają na produkcję soków i 30 minut na produkcję sałatek) wynosi:</p>
+<ul>
+<li class="fragment">15 (D) + 3 (J) = 18 soków,</li>
+<li class="fragment">15 (D) + 15 (J) = 30 sałatek.</li>
+<li class="fragment">Sumarycznie 48 produktów.</li>
+</ul>
+</section><section id="przewaga-wzgledna-komparatywna---specjalizacja" class="slide level2">
+<h2>Przewaga względna (komparatywna) - specjalizacja</h2>
+<p>Po specjalizacji (zakładając dla uproszczenia, że Daria produkuje tylko soki a Jan tylko sałatki):</p>
+<ul>
+<li class="fragment"><p>30 soków (D) + 30 sałatek (J)</p></li>
+<li class="fragment"><p>Łączne możliwości produkcyjne wzrastają więc z <strong>48</strong> jednostek do <strong>60</strong> jednostek.</p></li>
+</ul>
+</section><section id="przykady-prostych-modeli-ekonomicznych" class="slide level2">
+<h2>Przykłady prostych modeli ekonomicznych</h2>
+</section></section>
+<section><section id="wykad-2-swiat-w-liczbach" class="titleslide slide level1"><h1>Wykład 2: Świat w liczbach</h1></section><section id="compare-your-income" class="slide level2">
+<h2>Compare your income</h2>
+<p><a href="http://www.oecd.org/statistics/compare-your-income.htm" class="uri">http://www.oecd.org/statistics/compare-your-income.htm</a></p>
+</section><section id="nominalny-pkb-2016" class="slide level2">
+<h2>Nominalny PKB 2016</h2>
+<ul>
+<li class="fragment"><strong>USA</strong>: 18 620 (miliardów (<em>billions</em>) dolarów ($)) = <strong>18</strong> (trylionów/bilionów) <strong>620 000 000 000</strong> dolarów ($)</li>
+<li class="fragment"><strong>Polska</strong>: 469.32 miliarda dolarów ($) = 469 320 000 000 dolarów ($)</li>
+<li class="fragment"><strong>Rosja</strong>: 1 280 (miliardów (<em>billions</em>) dolarów ($))</li>
+<li class="fragment"><strong>Chiny</strong>: 11 230 (miliardów (<em>billions</em>) dolarów ($))</li>
+</ul>
+</section><section id="pkb-per-capita" class="slide level2">
+<h2>PKB per capita</h2>
+<p><a href="http://www.imf.org/external/datamapper/datasets/WEO" class="uri">http://www.imf.org/external/datamapper/datasets/WEO</a></p>
+</section><section id="stopa-inflacji-2016" class="slide level2">
+<h2>Stopa inflacji 2016</h2>
+<p><a href="https://data.oecd.org/price/inflation-cpi.htm" class="uri">https://data.oecd.org/price/inflation-cpi.htm</a></p>
+</section><section id="dug-publiczny" class="slide level2">
+<h2>Dług publiczny</h2>
+<p>Państwowy dług publiczny (PDP) jest wskaźnikiem zadłużenia sektora finansów publicznych określającym wysokość zobowiązań zaciągniętych przez poszczególne jednostki sektora na rynku finansowym (w tym bankowym).</p>
+</section><section id="dug-publiczny-2" class="slide level2">
+<h2>Dług publiczny (2)</h2>
+<p>Dług publiczny można wyrażać w wartościach nominalnych (kwota łącznych zobowiązań) lub w stosunku do wartości produktu krajowego brutto. Drugi wskaźnik jest jednym z mierników wykorzystywanych w ocenie wiarygodności państwa na arenie międzynarodowej.</p>
+<p>Dlatego często pod pojęciem obniżania długu publicznego rozumie się obniżenie stosunku długu publicznego do PKB.</p>
+</section><section id="dug-publiczny-jako-procent-pkb" class="slide level2">
+<h2>Dług publiczny jako procent PKB</h2>
+<p><a href="http://ec.europa.eu/eurostat/tgm/table.do?tab=table&amp;plugin=1&amp;language=en&amp;pcode=teina230" class="uri">http://ec.europa.eu/eurostat/tgm/table.do?tab=table&amp;plugin=1&amp;language=en&amp;pcode=teina230</a></p>
+</section><section id="deficyt-budzetowy" class="slide level2">
+<h2>Deficyt budżetowy</h2>
+<p>Jest to ujemne saldo w budżecie instytucji – sytuacja, w której wydatki w budżecie danej instytucji są wyższe niż jej dochody w danym okresie rozliczeniowym (roku budżetowym). Przeciwieństwem deficytu budżetowego jest nadwyżka budżetowa.</p>
+</section><section id="deficyt-budzetowy-jako-procent-pkb" class="slide level2">
+<h2>Deficyt budżetowy jako procent PKB</h2>
+<p><a href="http://ec.europa.eu/eurostat/tgm/table.do?tab=table&amp;plugin=1&amp;language=en&amp;pcode=teina200" class="uri">http://ec.europa.eu/eurostat/tgm/table.do?tab=table&amp;plugin=1&amp;language=en&amp;pcode=teina200</a></p>
+</section><section id="procedura-nadmiernego-deficytu" class="slide level2">
+<h2>Procedura nadmiernego deficytu</h2>
+<p>Procedura nadmiernego deficytu jest nakładana przez Radę UE na państwo członkowskie w przypadku niewypełnienia budżetowych kryteriów konwergencji (spójności), których wartości odniesienia dotyczą:</p>
+<ul>
+<li class="fragment">3% dla stosunku planowanego lub rzeczywistego deficytu publicznego do produktu krajowego brutto wyrażonego w cenach rynkowych,</li>
+<li class="fragment">60% dla stosunku zadłużenia publicznego do produktu krajowego brutto wyrażonego w cenach rynkowych.</li>
+</ul>
+<p>Państwo, którego deficyt został uznany za nadmierny, musi podjąć odpowiednie działania korygujące.</p>
+</section></section>
+<section><section id="wykad-3-podstawowe-kategorie-gospodarki-rynkowej" class="titleslide slide level1"><h1>Wykład 3: Podstawowe kategorie gospodarki rynkowej</h1></section><section id="gospodarka" class="slide level2">
+<h2>Gospodarka</h2>
+<p>Gospodarka jest to system (system ekonomiczny) obejmujący całokształt działalności gospodarczej prowadzonej w danym regionie (gospodarka regionalna), kraju (gospodarka narodowa) lub na całym świecie (gospodarka światowa). Działalność gospodarcza lub procesy gospodarowania obejmują sfery produkcji, podziału, wymiany i konsumpcji dóbr w warunkach ograniczoności zasobów (zasoby naturalne, kapitał, praca - czyli czynniki produkcji). Działalność gospodarcza ludzi obywa się w sposób ciągły ze względu na odnawialność i rozwój ludzkich potrzeb.</p>
+</section><section id="rynek" class="slide level2">
+<h2>Rynek</h2>
+<p>Rynek, albo mechanizm rynkowy, to mechanizm, dzięki któremu kupujący i sprzedający współdziałają, ustalając ceny i wymieniając dobra, usługi i papiery wartościowe. Na wolnym rynku, wskutek tzw. ‘gry’ popytu i podaży, ustalają się i zmieniają ceny produktów.</p>
+</section><section id="popyt" class="slide level2">
+<h2>Popyt</h2>
+<p>Popyt to funkcja przedstawiająca zależność pomiędzy ceną dobra, a ilością (liczbą sztuk) jaką konsumenci chcą i mogą nabyć w określonym czasie, przy założeniu niezmienności innych elementów charakteryzujących sytuację rynkową (ceteris paribus).</p>
+<p>Wielkość popytu – ilość dobra, którą konsumenci <strong>chcą</strong> i <strong>mogą</strong> zakupić w określonym czasie (np. w ciągu tygodnia, miesiąca, roku) po danej cenie.</p>
+</section><section id="podaz" class="slide level2">
+<h2>Podaż</h2>
+<p>Podaż to funkcja opisująca zależność między ceną rynkową jakiegoś dobra a ilością tego dobra, jaką gotowi są dostarczyć producenci.</p>
+<p>Wielkość podaży to ilość dóbr, oferowana na rynku przez producentów przy określonej cenie, w określonym czasie, przy założeniu niezmienności innych elementów charakteryzujących sytuację na rynku.</p>
+</section><section id="rownowaga-rynkowa" class="slide level2">
+<h2>Równowaga rynkowa</h2>
+<p>Równowaga rynkowa jest to taka sytuacja na rynku danego dobra, w której wielkość popytu równa jest wielkośći podaży. Rynek, na którym występuje stan równowagi jest rynkiem stabilnym.</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="PG_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="PG_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        chalkboard: {
+          toggleNotesButton: false,
+          theme: 'blackboard',
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'PG_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

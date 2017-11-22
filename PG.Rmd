@@ -1,0 +1,425 @@
+---
+title: "Polityka gospodarcza"
+author: "Michał Pierzgalski"
+subtitle: '2017'
+output:
+  revealjs::revealjs_presentation:
+    reveal_options:
+      chalkboard:
+        theme: blackboard
+        toggleNotesButton: no
+    reveal_plugins: chalkboard
+    self_contained: no
+    theme: white
+    incremental: true
+    transition: "slide"
+  pdf_document: default
+  html_document: default
+---
+
+# Wykład 1: Narzędzia analizy ekonomicznej
+
+## Modele (1)
+
+Analizując gospodarkę ekonomiści posługują się modelami. Modele opisują w uproszczony sposób pewne prawidłowości ekonomiczne.
+
+## Modele (2)
+
+Zastosowanie modeli w badaniach wymaga ustalenia podstawowych założeń (zasad) odnośnie do funkcjonowania danego modelu, w tym przyjęcia klauzuli *ceteris paribus*.
+
+Modele najczęściej mają postać **rysunkową** lub dane są w postaci **równań matematycznych**.
+
+## Model popytu i podaży (postać graficzna)
+
+<img src="img/market-equilibrium.svg" alt="Drawing" style="width:56%;">
+
+## Liniowy model popytu i podaży - postać funkcyjna
+
+- $Q_{D}(p) = b - ap$
+- $Q_{S}(p) = b + ap$
+
+## Równanie PKB
+
+Produkt Krajowy Brutto (PKB) - jest to łączna **wyrażona w pieniądzu wartość** wszystkich **dóbr finalnych** i usług wytworzonych w danym kraju zazwyczaj w ciągu roku lub kwartału. Jest to suma wartości dodanej wytworzonej przez wszystkie podmioty gospodarcze danego kraju, niezależnie kto jest ich właścicielem.
+
+## Równanie PKB (2)
+
+**PKB** można wyliczać jako wydatki na dobra i usługi finalne różnych podmiotów gospodarczych jak: gospodarstwa domowe, przedsiębiorstwa, państwo i cudzoziemcy, w tym wypadku: 
+
+$PKB = C + I + G + X$
+
+gdzie: *PKB* to produkt krajowy brutto, *C* - konsumpcja, *I* - inwestycje, *G* - wydatki rządowe, *X* - eksport netto.
+
+## Model ruchu okrężnego w gospodarce
+
+<img src="img/circular_flow.png" alt="Drawing" style="width:50%;">
+
+## Dane
+
+- szeregi czasowe
+- dane przekrojowe
+- dane panelowe
+
+## Wskaźniki (np. zmiany cen) (1)
+
+||2004|2007|2010|Waga|
+|-|-|-|-|-|
+|Cena aluminium|1758|2644|2232|0.2|
+|Cena miedzi|2766|6710|7234|0.8|
+|Wskaźnik cen aluminium|100|150|...|-|
+|Wskaźnik cen miedzi|100|242|...|-|
+|Wskaźnik cen obu metali|100|224|...|-|
+
+Waga odzwierciedla udział danego dobra w całkowitych wydatkach typowego gospodarstwa domowego lub przedsiębiorstwa. **Suma wag jest równa 1**.
+
+## Wskaźniki (np. zmiany cen) (2)
+
+Ile wynosi wskaźnik cen aluminium w 2007 (rok bazowy to 2004)?
+
+1. Przyjmujemy np., że w roku bazowym wskaźnik cen jest równy 100.
+2. Obliczamy o ile wzrosły ceny aluminium w okresie 2004-2007:
+$(2644 - 1758)/1758 = 0.5040 = 50.4\%$
+3. Odpowiednio zwiększamy wskaźnik cen aluminium:
+$100 + 100 \times 0.5040 = 150.40$
+
+**Podobne obliczenia wykonujemy dla innych dóbr**.
+
+## Wskaźniki (np. zmiany cen) (3)
+
+Ogólny wskaźnik cen (np. CPI lub PPI) to **średnia ważona** wartości wskaźników dla poszczególnych dóbr (np. cen aluminium i miedzi).
+
+
+## Wskaźnik CPI
+
+- Wskaźnik cen towarów i usług konsumpcyjnych (Consumer Price Index) oblicza i publikuje Główny Urząd Statystyczny.
+
+- Aby policzyć ten wskaźnik, co miesiąc zbierane są ceny ok. 1400 towarów (takich jak pieczywo, mięso, owoce, gazety, środki do prania, meble, sprzęt komputerowy) i usług (internetowych, transportowych, turystycznych) z ok. 35 tysięcy punktów handlowych i usługowych.
+
+
+## Wskaźnik CPI (2)
+
+- Aby policzyć zmianę ogólnego poziomu cen – oprócz znajomości cen poszczególnych kategorii towarów i usług – konieczna jest także znajomość udziału tych kategorii w wydatkach konsumentów.
+
+- Zmiana ceny produktu, który ma znaczny udział w wydatkach w większym stopniu wpływa na ogólny poziom cen, niż zmiana ceny produktu o niskim udziale. Wspomniane udziały służą jako wagi przy wyliczaniu przeciętnego poziomu cen.
+
+
+## Wskaźnik PPI
+
+- (ang. Producer Price Index, PPI) – wskaźnik obrazujący zmiany poziomu cen ustalanych przez producentów na różnych etapach procesu wytwarzania dóbr. Powszechnie stosowany na świecie, jako jedna z miar poziomu inflacji.
+
+- W Polsce indeks cen dóbr produkcyjnych przyjmuje postać wskaźnika cen produkcji sprzedanej przemysłu i jest obliczany oraz publikowany przez Główny Urząd Statystyczny.
+
+
+## Pomiar zmian wielkości ekonomicznych
+
+- Zmiana procentowa, czyli zmiana absolutna podzielona przez wyjściowy/początkowy poziom danej wielkości. 
+- Stopa wzrostu jest to zmiana procentowa zmiennej w danym okresie (zwykle rok) - zmiana procentowa w czasie (np. realna roczna stopa wzrostu **PKB**).
+
+## Pomiar inflacji
+
+Od marca 2009 r. Narodowy Bank Polski oblicza i publikuje cztery miary tzw. **inflacji bazowej**, np.:
+
+- inflacja po wyłączeniu cen najbardziej zmiennych,
+- inflacja po wyłączeniu cen żywności i energii.
+
+## Wskaźnik inflacji
+
+W przypadku cen towarów konsumpcyjnych:
+
+Stopa inflacji = $(CPI_1 - CPI_0) / CPI_0 \times 100\%$
+
+## Procent a punkt procentowy (p.p.)
+
+Spadek z 50\% do 40\% to spadek o 10 punktów procentowych lub o 20\%.
+
+$(40 - 50)/50 = -0.2 = 20\%$
+
+## Wielkości nominalne i realne (1)
+
+Tabela: Średnia cena nowego domu w UK
+
+||1963|1983|2009|
+|-|-|-|-|
+|Cena domu (w tys. funtów)|3.1|35.6|161|
+|Wskaźnik cen (2009 = 100)|6.3|39.7|100|
+|Realna cena domu w tys. funtów (w cenach z 2009)|49.2|90|161|
+
+
+## Wielkości nominalne i realne (2)
+
+Jak policzyć realną cenę domu w roku 1963 (2009 jest rokiem bazowy)?
+
+1. Obliczamy o ile większy jest ogólny poziom cen w 2009 :
+$(100 - 6.3)/6.3 = 14.8730 \times 100\% = 1487.30\%$
+2. Zwiększamy cenę domu z 1963 o $1487.30\%$ :
+$3.1 + 3.1 \times 14.8730 = 49.2063$
+
+
+## Wielkości nominalne i realne (2)
+
+Jak policzyć realną cenę domu w roku 2009 (1963 jest rokiem bazowy)?
+
+1. Obliczamy o ile mniejszy był ogólny poziom cen w 1963 :
+$(6.3 - 100)/100 = -0.937 \times 100\% = 93.7\%$
+2. Zmniejszamy cenę domu z 2009 o $93.7\%$ :
+$161 - 0.937 \times 161 = 10.143$
+
+
+## Siła nabywcza pieniądza
+
+Jest to wskaźnik liczby dóbr, które można nabyć za jednostkę pieniężną (np. 1\$)
+
+
+## Iluzja pieniądza
+
+Ludzie zwykle rozumują w kategoriach nominalnej wartości pieniądza.
+
+Załóżmy, że za wynagrodzenie 1000 Euro kupujesz tylko chleb, który kosztuje 1 Euro/kg.
+
+Przypuśćmy, że masz do wybory dwa warianty:
+
+- wzrost wynagrodzenia do 1600 Euro, przy wzroście ceny chleba do 2 Euro/kg,
+- spadek wynagrodzenia do 800 Euro, przy utrzymaniu ceny chleba 1 Euro/kg.
+
+
+## Wielkości całkowite, przeciętne i krańcowe
+
+Wielkości:
+
+- całkowite ($C$),
+- przeciętne ($\frac{C}{q}$)
+- wielkości krańcowe ($\frac{\Delta C}{\Delta q}$ dla $\Delta q \rightarrow 0$).
+
+## Koszty całkowite (stałe i zmienne)
+
+| Produkcja | Koszta całkowity stały | Koszt całkowity zmienny | Koszt całkowity |
+|-----------|------------------------|-------------------------|-----------------|
+| 1         | 100                    | 50                      | 150             |
+| 2         | 100                    | 80                      | 180             |
+| 3         | 100                    | 100                     | 200             |
+| 4         | 100                    | 110                     | 210             |
+| 5         | 100                    | 150                     | 250             |
+| 6         | 100                    | 220                     | 320             |
+| 7         | 100                    | 350                     | 450             |
+| 8         | 100                    | 640                     | 740             |
+
+## Koszty przeciętne (stałe)
+
+| Produkcja | Koszt całkowity stały | Koszt przeciętny stały |
+|-----------|-----------------------|------------------------|
+| 1         | 100                   | 100                    |
+| 2         | 100                   | 50                     |
+| 3         | 100                   | 33.3                   |
+| 4         | 100                   | 25                     |
+| 5         | 100                   | 20                     |
+| 6         | 100                   | 16.6                   |
+| 7         | 100                   | 14.3                   |
+| 8         | 100                   | 12.5                   |
+
+## Koszty przeciętne (zmienne)
+
+| Produkcja | Koszt całkowity zmienny | Koszt przeciętny zmienny |
+|-----------|-------------------------|--------------------------|
+| 1         | 50                      | 50                       |
+| 2         | 80                      | 40                       |
+| 3         | 100                     | 33.3                     |
+| 4         | 110                     | 27.5                     |
+| 5         | 150                     | 30                       |
+| 6         | 220                     | 36.7                     |
+| 7         | 350                     | 50                       |
+| 8         | 640                     | 80                       |
+
+## Koszt przeciętny
+
+| Produkcja | Koszt przeciętny stały | Koszt przeciętny zmienny | Koszt przeciętny całkowity |
+|-----------|------------------------|--------------------------|----------------------------|
+| 1         | 100                    | 50                       | 150                        |
+| 2         | 50                     | 40                       | 90                         |
+| 3         | 33.3                   | 33.3                     | 67                         |
+| 4         | 25                     | 27.5                     | 52.5                       |
+| 5         | 20                     | 30                       | 50                         |
+| 6         | 16.6                   | 36.7                     | 53.3                       |
+| 7         | 14.3                   | 50                       | 64.3                       |
+| 8         | 12.5                   | 80                       | 92.5                       |
+
+## Koszty całkowite i krańcowe
+
+| Produkcja | Koszt całkowity | Koszt krańcowy |
+|-----------|-----------------|----------------|
+| 1         | 150             |                |
+| 2         | 180             | 30             |
+| 3         | 200             | 20             |
+| 4         | 210             | 10             |
+| 5         | 250             | 40             |
+| 6         | 320             | 70             |
+| 7         | 450             | 130            |
+| 8         | 740             | 290            |
+
+
+## Koszt alternatywny (*opportunity cost*)
+
+Wyrażony jest w jednostkach alternatywnego dobra.
+
+Z ilu jednostek jednego dobra (*X*) trzeba zrezygnować, aby otrzymać dodatkową jednostkę innego dobra (*Y*)?
+
+
+## Przewaga absolutna
+
+| Producent | Dobro   | Czas produkcji (w minutach) | Produkcja na godzinę |
+|-----------|---------|-----------------------------|----------------------|
+| Daria     | Sok     | 2                           | 30                   |
+| Daria     | Sałatka | 2                           | 30                   |
+|-|-|-|-|
+| Jan       | Sok     | 10                          | 6                    |
+| Jan       | Sałatka | 2                           | 30                   |
+
+## Przewaga absolutna
+
+Produkcja na godzinę, przy równym podziale czasu na produkcję obu towarów:
+
+| Producent | Dobro   | Produkcja (1h) |
+|-----------|---------|--------------------|
+| Daria     | Sok     | 15          |
+| Daria     | Sałatka | 15              |
+|-|-|-|
+| Jan       | Sok     | 3          |
+| Jan       | Sałatka | 15           |
+
+## Przewaga względna (komparatywna) (1)
+
+Jest to zdolność podmiotu do produkcji dobra (świadczenia usługi) po niższym **koszcie alternatywnym**.
+
+
+## Przewaga względna (komparatywna) (2)
+
+| Producent | Dobro   | Koszt alternatywny |
+|-----------|---------|--------------------|
+| Daria     | Sok     | 1 sałatka          |
+| Daria     | Sałatka | 1 sok              |
+|-|-|-|
+| Jan       | Sok     | 5 sałatek          |
+| Jan       | Sałatka | 1/5 soku           |
+
+## Przewaga względna (komparatywna) (3)
+
+Jan ma niższy koszt alternatywny produkcji **sałatek**, dlatego nawiązanie relacji handlowych między Janem i Darią będzie możliwe, gdy:
+
+- Jan wyspecjalizuje się w produkcji sałatek i będzie je sprzedawał Darii (np. 20 sałatek sprzedaje Darii i 10 sprzedaje samodzielnie),
+- Daria wyspecjalizuje się w produkcji soków i będzie je sprzedawała Janowi (np. 10 soków sprzedaje Janowi i 20 zatrzymuje).
+
+## Przewaga względna (komparatywna) (3)
+
+Podział towarów po nawiązaniu wymiany handlowej.
+
+| Producent | Dobro   | Liczba towarów (na godzinę) | 
+|-----------|---------|---------------------------|
+| Daria     | Sok     | 20                        |
+| Daria     | Sałatka | 20                        |
+|-|-|-|
+| Jan       | Sok     | 10                        |
+| Jan       | Sałatka | 10                        |
+
+## Przewaga względna (komparatywna) (4)
+
+Przed specjalizacją i nawiązaniem relacji handlowych, produkcja łączna na 1 godzinę Jana i Darii (zakładając, że 30 minut poświecają na produkcję soków i 30 minut na produkcję sałatek) wynosi:
+
+- 15 (D) + 3 (J) = 18 soków,
+- 15 (D) + 15 (J) = 30 sałatek.
+- Sumarycznie 48 produktów.
+
+## Przewaga względna (komparatywna) - specjalizacja
+
+Po specjalizacji (zakładając dla uproszczenia, że Daria produkuje tylko soki a Jan tylko sałatki):
+
+- 30 soków (D) + 30 sałatek (J)
+
+- Łączne możliwości produkcyjne wzrastają więc z **48** jednostek do **60** jednostek.
+
+
+## Przykłady prostych modeli ekonomicznych
+
+
+# Wykład 2: Świat w liczbach
+
+## Compare your income
+
+http://www.oecd.org/statistics/compare-your-income.htm
+
+
+## Nominalny PKB 2016
+
+- **USA**: 18 620 (miliardów (*billions*) dolarów (\$)) = **18** (trylionów/bilionów) **620 000 000 000** dolarów (\$)
+- **Polska**: 469.32 miliarda dolarów (\$) = 469 320 000 000 dolarów (\$)
+- **Rosja**: 1 280 (miliardów (*billions*) dolarów (\$))
+- **Chiny**: 11 230 (miliardów (*billions*) dolarów (\$))
+
+
+## PKB per capita
+
+http://www.imf.org/external/datamapper/datasets/WEO
+
+## Stopa inflacji 2016
+
+https://data.oecd.org/price/inflation-cpi.htm
+
+## Dług publiczny
+
+Państwowy dług publiczny (PDP) jest wskaźnikiem zadłużenia sektora finansów publicznych określającym wysokość zobowiązań zaciągniętych przez poszczególne jednostki sektora na rynku finansowym (w tym bankowym).
+
+## Dług publiczny (2)
+
+Dług publiczny można wyrażać w wartościach nominalnych (kwota łącznych zobowiązań) lub w stosunku do wartości produktu krajowego brutto. Drugi wskaźnik jest jednym z mierników wykorzystywanych w ocenie wiarygodności państwa na arenie międzynarodowej.
+
+Dlatego często pod pojęciem obniżania długu publicznego rozumie się obniżenie stosunku długu publicznego do PKB.
+
+## Dług publiczny jako procent PKB
+
+http://ec.europa.eu/eurostat/tgm/table.do?tab=table&plugin=1&language=en&pcode=teina230
+
+## Deficyt budżetowy
+
+Jest to ujemne saldo w budżecie instytucji – sytuacja, w której wydatki w budżecie danej instytucji są wyższe niż jej dochody w danym okresie rozliczeniowym (roku budżetowym). Przeciwieństwem deficytu budżetowego jest nadwyżka budżetowa.
+
+## Deficyt budżetowy jako procent PKB
+
+http://ec.europa.eu/eurostat/tgm/table.do?tab=table&plugin=1&language=en&pcode=teina200
+
+## Procedura nadmiernego deficytu
+
+Procedura nadmiernego deficytu jest nakładana przez Radę UE na państwo członkowskie w przypadku niewypełnienia budżetowych kryteriów konwergencji (spójności), których wartości odniesienia dotyczą:
+
+- 3\% dla stosunku planowanego lub rzeczywistego deficytu publicznego do produktu krajowego brutto wyrażonego w cenach rynkowych,
+- 60\% dla stosunku zadłużenia publicznego do produktu krajowego brutto wyrażonego w cenach rynkowych.
+
+Państwo, którego deficyt został uznany za nadmierny, musi podjąć odpowiednie działania korygujące.
+
+
+# Wykład 3: Podstawowe kategorie gospodarki rynkowej
+
+## Gospodarka
+
+Gospodarka jest to system (system ekonomiczny) obejmujący całokształt działalności gospodarczej prowadzonej w danym regionie (gospodarka regionalna), kraju (gospodarka narodowa) lub na całym świecie (gospodarka światowa). Działalność gospodarcza lub procesy gospodarowania obejmują sfery produkcji, podziału, wymiany i konsumpcji dóbr w warunkach ograniczoności zasobów (zasoby naturalne, kapitał, praca - czyli czynniki produkcji). Działalność gospodarcza ludzi obywa się w sposób ciągły ze względu na odnawialność i rozwój ludzkich potrzeb.
+
+
+## Rynek
+
+Rynek, albo mechanizm rynkowy, to mechanizm, dzięki któremu kupujący i sprzedający współdziałają, ustalając ceny i wymieniając dobra, usługi i papiery wartościowe. Na wolnym rynku, wskutek tzw. 'gry' popytu i podaży, ustalają się i zmieniają ceny produktów.
+
+
+## Popyt
+
+Popyt to funkcja przedstawiająca zależność pomiędzy ceną dobra, a ilością (liczbą sztuk) jaką konsumenci chcą i mogą nabyć w określonym czasie, przy założeniu niezmienności innych elementów charakteryzujących sytuację rynkową (ceteris paribus).
+
+Wielkość popytu – ilość dobra, którą konsumenci **chcą** i **mogą** zakupić w określonym czasie (np. w ciągu tygodnia, miesiąca, roku) po danej cenie.
+
+
+## Podaż
+
+Podaż to funkcja opisująca zależność między ceną rynkową jakiegoś dobra a ilością tego dobra, jaką gotowi są dostarczyć producenci.
+
+Wielkość podaży to ilość dóbr, oferowana na rynku przez producentów przy określonej cenie, w określonym czasie, przy założeniu niezmienności innych elementów charakteryzujących sytuację na rynku.
+
+
+## Równowaga rynkowa
+
+Równowaga rynkowa jest to taka sytuacja na rynku danego dobra, w której wielkość popytu równa jest wielkośći podaży. Rynek, na którym występuje stan równowagi jest rynkiem stabilnym.
